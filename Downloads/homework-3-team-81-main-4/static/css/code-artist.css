@@ -1,0 +1,67 @@
+.main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 5em;
+}
+
+.canvas-controls {
+  margin-bottom: 1em;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  gap: 0.5em;
+}
+
+.canvas-container {
+  position: relative;
+  border-radius: 6px;
+  /* I don't know where the 4px comes from */
+  height: 480px;
+}
+.canvas-container::before, .canvas-container::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: red;
+  transition: 0.5s;
+  z-index: -1;
+  border-radius: inherit;
+  transform: scale(0.8);
+}
+.canvas-container::before {
+  background: var(--accent-color);
+}
+.canvas-container::after {
+  background: var(--secondary-color);
+}
+.canvas-container:hover::before {
+  left: -8em;
+}
+.canvas-container:hover::after {
+  right: -8em;
+}
+
+#art-canvas {
+  background: white;
+  border-radius: inherit;
+  box-shadow: 0 0 6px 0 black, inset 0 0 6px 0 black, inset 0 0 6px 0 black;
+  transition: 0.5s;
+  border: 2px solid var(--primary-color);
+}
+.main:has(#interactiveMode.btn--active) #art-canvas:active {
+  filter: drop-shadow(0 0 8px var(--primary-color));
+  background: var(--primary-color);
+}
+
+@media (max-width: 768px) {
+  #art-canvas {
+    width: 400px;
+  }
+}
+@media (max-width: 425px) {
+  #art-canvas {
+    width: 240px;
+  }
+}
