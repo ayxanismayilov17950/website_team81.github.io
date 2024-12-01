@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<!-- 
+    SITE 1101 Principles of Information Systems 
+    (c)202X by Name Surname 
+    Submitted in partial fulfillment of the requirements of the course.
+-->
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Web Savants</title>
+  <link rel="icon" type="image/x-icon" href="static/img/logo-512.png">
+  <link rel="stylesheet" href="static/css/styles.css">
+  <link rel="stylesheet" href="static/css/index.css">
+  <style>
+    .navbar {
+      filter: none;
+    }
+
+    .navbar:has(>.navbar__logo--visible) {
+      filter: drop-shadow(0 0 8px black);
+    }
+  </style>
+</head>
+
+<body>
+  <header class="header">
+    <div class="hero">
+      <h2 class="hero__title">
+        Web Savants
+      </h2>
+    </div>
+  </header>
+  <nav class="navbar navbar--sticky">
+    <div class="navbar__logo"><img src="static/img/logo.svg"></div>
+    <ul class="navbar__menu">
+      <li><a href="./" class="navbar__link">Home</a></li>
+      <li><a href="./team-members.html" class="navbar__link">Team Members</a></li>
+      <li><a href="./web-project.html" class="navbar__link">Web Project</a></li>
+      <li><a href="./hour-of-code.html" class="navbar__link">Hour of Code</a></li>
+      <li><a href="./code-artist.html" class="navbar__link">Code Artist</a></li>
+    </ul>
+    <div class="navbar__dropdown-menu-btn-container">
+      <div class="navbar__dropdown-menu-btn"></div>
+    </div>
+    <div class="navbar__dropdown-menu-container">
+      <ul class="navbar__dropdown-menu">
+        <li><a href="./" class="navbar__link">Home</a></li>
+        <li><a href="./team-members.html" class="navbar__link">Team Members</a></li>
+        <li><a href="./web-project.html" class="navbar__link">Web Project</a></li>
+        <li><a href="./hour-of-code.html" class="navbar__link">Hour of Code</a></li>
+        <li><a href="./code-artist.html" class="navbar__link">Code Artist</a></li>
+      </ul>
+    </div>
+  </nav>
+  <main class="main">
+    <header class="main__header">
+      <h1 class="main__title">Simple, yet effective.</h1>
+      <p class="main__subtitle">Meet our amazing team and discover our work.</p>
+    </header>
+
+    <section class="section">
+      <h2 class="section__title">Who We Are</h2>
+      <p class="section__desc">A group of like-minded students with diverse skills in technology, design, and
+        problem-solving.</p>
+    </section>
+
+    <section class="section">
+      <h2 class="section__title">What Drives Us</h2>
+      <p class="section__desc">Our shared curiosity and eagerness to explore new ideas bring us together as a team.</p>
+    </section>
+
+    <section class="section">
+      <h2 class="section__title">Our Goal</h2>
+      <p class="section__desc">To grow as individuals and as a team, while leaving a meaningful impact through our
+        projects.</p>
+    </section>
+
+    <section class="works-section">
+      <h1>Our Work</h1>
+      <div class="posts">
+        <a href="https://www.facebook.com/share/p/YsNPbhSzvsDcF2Zk/" target="_blank">
+          Creating Logic Gates using Circuits
+        </a>
+        <a href="https://www.instagram.com/p/DCMxSyACnvT" target="_blank">
+          Hour of Code Event
+        </a>
+      </div>
+    </section>
+  </main>
+  <footer class="footer">
+    <div>
+      <div class="footer__nav">
+        <h3>Pages</h3>
+        <ul>
+          <li><a href="./">Home</a></li>
+          <li><a href="./team-members.html">Team Members</a></li>
+          <li><a href="./hour-of-code.html">Hour of Code</a></li>
+          <li><a href="./web-project.html">Web Project</a></li>
+          <li><a href="./code-artist.html">Code Artist</a></li>
+        </ul>
+      </div>
+      <div class="footer__logos">
+        <img src="static/img/ada_logo_white.png" alt="ADA University Logo">
+        <img src="static/img/logo-white.svg" alt="Web Savants Logo">
+      </div>
+    </div>
+    <small>
+      Copyright &copy; 2024 Web Savants. All Rights Reserved
+    </small>
+  </footer>
+</body>
+<script type="text/javascript" src="static/js/scripts.js"></script>
+<script type="text/javascript" src="static/js/index.js"></script>
+
+</html>
